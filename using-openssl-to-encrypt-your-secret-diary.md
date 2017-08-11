@@ -34,9 +34,15 @@ $ openssl enc -d -aes-256-cbc -a -in my-secret-diary.cry
 如果一切都正确，可以通过 my-secret-diary.cry 获得正确的 my-secret-diary.md文件内容，那么你就可以放心的使用 rm 命令删除明文文件啦。
 
 ```bash
-rm my-secret-diary.cry
+rm my-secret-diary.md
 ```
 
 ## 备份到Github
 
-陪着Github，就可以既享受免费托管自己的私密日记，又不会被别人查看到自己的密码啦。
+如果你以下条件：
+
+- 希望利用Github托管自己的日记，以便备份，防止本地不小心删除。
+- 只有使用Gihub public repository 的权限（一般免费用户可以使用的功能）
+- 希望别人无法阅读自己的秘密
+
+那你不妨将上述使用openssl加密日记的方法结合Github的使用，就可以既享受免费托管自己的私密日记，又不会被别人查看到自己的秘密啦。
